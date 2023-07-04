@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS-->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section id="signinSec">
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="main.html"><img src="images/logo-no-background.png" alt="Karirr Logo" width="150px" height="50px"></a>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="#mainSec">Jobseeker</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="emp.html">Employer</a>
+                        </li>
+                        <li class="nav-item mx-3"><button class="btn" type="submit"><a href="jobsignin.html">Sign-in</a></button></li>
+                        <li class="nav-item mx-3"><button class="btn" type="submit"><a href="signup.html">Sign-up</a></button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar End-->
+    </section>
+
+    <div class="container signin">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <form class="signup-form">
+                        <h1 class="signup-title m-auto">Karirr</h1>
+                        <p class="signup-message m-auto">Sign-in now to see your matches.</p>
+                        <label>
+                            <input type="email" class="input">
+                            <span>Email</span>
+                        </label>
+                        <label>
+                            <input type="password" class="input">
+                            <span>Password</span>
+                        </label>
+                        <div class="d-flex flex-wrap">
+                            <button class="signup-submit w-100"><a href="seekerdash.html">Submit</a></button>
+                            <small class="forgot w-100 text-center"><a href="">Forgot Password?</a></small>
+                        </div>
+                        <p class="or">or</p>
+                        <p class="with mt-0">Sign in with:</p>
+                        <div class="signin-option text-center">
+                            <a href="" class="g-in w-100"><img src="images/google.png" alt="" width="15px"> Google</a>
+                            <a href="" class="a-in w-100"><img src="images/appleicon.png" alt="" width="15px"> Apple</a>
+                        </div>
+                        <p class="already m-auto">Don't have an account yet? <a href="signup.html">Sign-up</a> </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="kar-foot">
+        <div class="container">
+            <div class="row">
+                <div class="img">
+                    <img src="images/logo-no-background.png" alt="" class="mt-5" width="200px" height="70px">
+                </div>
+                <div class="col- col-lg-5 d-flex flex-wrap">
+                    <div class="footer-logo my-3">
+                        <h4 class="mt-3">Where looking for a job is as easy as dating online.</h4>
+                        <h6>We transform the way candidates find jobs and companies hire talents.</h6>
+                        <div class="app">
+                            <a href="#mainSec"><img id="sm1" class="me-2 my-4" src="images/apple.jpg" width="80"></a>
+                            <a href="#mainSec"><img id="sm2" class="mx-2 my-4" src="images/googleplay.png" width="80"></a>
+                            <a href="#mainSec"><img id="sm3" class="ms-2 my-4" src="images/huawei.png" width="80"></a>
+                        </div>
+                        <div>
+                            <ul class="d-flex">
+                                <li><a href=""><i class="fa-brands fa-facebook me-5 ps-0"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-linkedin me-5"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-globe me-5"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-youtube me-5"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col- col-lg-7 flex-wrap">
+                    <div class="links">
+                        <div class="row">
+                            <div class="col-4">
+                                <ul class="list-group me-5">
+                                    <li class="group-name">Jobseekers</li>
+                                    <li class="list-group-item"><a href="signup.html">Sign Up</a></li>
+                                    <li class="list-group-item"><a href="main.html#company">Job Board</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul class="list-group me-5">
+                                    <li class="group-name">Employers</li>
+                                    <li class="list-group-item"><a href="emp-signup.html">Start Hiring</a></li>
+                                    <li class="list-group-item"><a href="#">Branding</a></li>
+                                    <li class="list-group-item"><a href="#">Blogs</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul class="list-group me-5">
+                                    <li class="group-name">About</li>
+                                    <li class="list-group-item"><a href="#">Careers</a></li>
+                                    <li class="list-group-item"><a href="#">Partner with Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tribute d-flex">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-5">
+                                © 2023 Karirr Ventures Inc.
+                            </div>
+                            <div class="col-7 text-sm-end">
+                                <ul class="d-flex p-0">
+                                    <li><a href="" class="priv me-1 pe-1">Privacy Policy</a></li>
+                                    <li><a href="">Terms of Use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

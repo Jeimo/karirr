@@ -1,0 +1,1333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /*outline: red 1px solid;*/
+}
+
+#mainSec {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#mainSec::before {
+    content:'';
+    background-image: url('images/mainbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .9;
+}
+
+.navbar {
+    background: none;
+    z-index: 1;
+    width: 90%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 80px;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.nav-item .btn, .btn-hire {
+    background: linear-gradient(112.82deg, #a3cc88, 19.93%, #0b6549);
+    border: none;
+    padding: 10px, 20px;
+    margin-bottom: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.nav-item .btn:hover, .btn-hire:hover {
+    transform: translateY(-5px);
+    color: #fff;
+}
+
+.nav-item .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-toggler i:hover {
+    color: #0b6549;
+    transform:scaleX(1.8);
+    border: none
+}
+
+#navbarContent .navbar-nav .nav-link:hover {
+    color:#0b6549 ; 
+    opacity:.7!important;
+}
+
+/*offcanvas*/
+#mainSec .offcanvas {
+    max-height: 100vh;
+    width: auto;
+}
+
+.offcanvas-body .nav-item {
+    font-size: 15px;
+}
+
+.offcanvas-body .nav-item a {
+    color: #0b6549;
+}
+
+.offcanvas-body .nav-item button {
+    width: 280px;
+}
+
+.offcanvas .offcanvas-body .offcanvas-button {
+    color: #fff;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.offcanvas .offcanvas-body .offcanvas-button .button1 {
+    margin-top: 110px;
+    color: #fff;
+}
+
+.offcanvas .offcanvas-body .offcanvas-button a {
+    color: #fff;
+}
+
+.scroll {
+    background: #fff;
+    top: -100px;
+    border-radius: 20px;
+    width: 90%;
+    animation: fadedown .4s ease 1s forwards;
+}
+
+@keyframes fadedown {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+.hero {
+    margin-top: 150px;
+    padding-top: 70px;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.d-flex .dropdown .hero-drop,
+.dropdown .dropdown-menu .dropdown-item,
+.d-flex .form-control {
+    color: #0b6549;
+    background-color: #fff;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.searches {
+    font-size: 12px;
+    width: 400px;
+}
+
+.searches span {
+    border: #4e4f4f 1px solid;
+    background-color: #fff;
+    margin: 3px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.searches span a {
+    text-decoration: none;
+    color: #000;
+}
+
+.company h1, a {
+    color: #0b6549
+}
+
+.company h1 {
+    margin-top: 70px;
+}
+
+/*card section*/
+.card {
+    max-width: 100%;
+    width: 380px;
+    height: 430px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    position: relative;
+    flex: 1;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/****media query for jobseeker dash****/
+@media screen and (max-width: 600px) {
+    .card {
+    max-width: 100%;
+    }
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    color: #fff;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    transition: 1.5s;
+}
+
+.card-body h5 {
+    padding-bottom: 70px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.card-body .see-more {
+    background: transparent;
+    color: #0b6549;
+    border: none;
+    text-align: left;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.card-body .main-card-btn,
+.card__content .main-card-btn {
+    justify-content: space-evenly;
+}
+
+.card-body .main-card-btn .no,
+.swiper-slide .card__content .main-card-btn .no {
+    color: crimson;
+    border: none;
+    background-color: transparent;
+    margin-right: 60px;
+}
+
+.card-body .main-card-btn .yes,
+.swiper-slide .card__content .main-card-btn .yes {
+    color: #1a7d5d;
+    border: none;
+    background-color: transparent;
+}
+
+.card:hover .card-body {
+    right: 0;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.card-subtext {
+    font-size: 11px;
+    margin: 0 0;
+    bottom: 50%;
+}
+
+.main-card-btn {
+    color: #fff;
+    background: transparent;
+    border-radius: 2px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* main banner*/
+.banner {
+    background-image: url('images/banner1.jpg');
+    background-size: cover;
+    min-height: auto;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.banner .banner-demo, .banner-hire {
+    margin: auto;
+    color: #0b6549;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.banner .demo {
+    background: linear-gradient(112.82deg, #a3cc88, 19.93%, #0b6549);
+    border: none;
+    padding: 10px, 20px;
+    margin-bottom: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.banner .banner-demo a, 
+.banner .banner-hire a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner .btn:hover {
+    transform: translateY(-5px);
+}
+
+/*footer*/
+.kar-foot {
+    background-color: #d3ddcc;
+    min-height: auto;
+}
+
+.kar-foot img {
+    max-width: 190px;
+}
+
+.kar-foot .links, .kar-foot .list-group .list-group-item {
+    border: none;
+    color: rgb(101, 100, 100);
+    margin-top: 16px;
+    background-color: #d3ddcc;
+}
+
+.kar-foot .list-group .list-group-item a {
+    color: rgb(101, 100, 100);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.kar-foot .footer-logo i:hover  {
+    color: #a3cc88;
+}
+
+.kar-foot .group-name {
+    color: #0b6549;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.kar-foot .list-group .list-group-item a:hover {
+    color:#0b6549;
+}
+
+.kar-foot .tribute {
+    margin: 50px 0 20px 0;
+}
+
+.tribute .priv {
+    border-right: 2px solid #4e4f4f;
+}
+
+/*****************EMPLOYER STYLES****************/
+#empSec {
+    background-image: none;
+}
+
+.employer {
+    width: 100%;
+    margin-top: 140px;
+}
+
+.employer-text h1 {
+    margin-top: 140px;
+    color: #0b6549;
+}
+
+.employer-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.employer img {
+    background-size: fill;
+    border-radius: 20px;
+}
+
+.employer-text .dropdown {
+    border: 1px solid #a3cc88;
+    width: 350px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+/*emp banner*/
+.emp-banner {
+    width: auto;
+    height: auto;
+    background-color: #d8e6e1;
+    background-image: url('images/emp-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*emp-card*/
+.emp-banner .book {
+    position: relative;
+    border-radius: 10px;
+    width: 290px;
+    height: 400px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow:  5px 5px 11px #96bc7d,
+                -5px -5px 11px #b0dc93;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #0b6549;
+    margin: auto;
+}
+
+.emp-banner .cover {
+    top: 0;
+    position: absolute;
+    background: rgb(202,204,196);
+    background: linear-gradient(90deg, rgba(202,204,196,1) 0%, rgba(118,136,232,1) 52%);
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #92a387;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.emp-banner .book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+}
+
+.emp-banner p {
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.emp-banner h5 {
+    padding-left: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*SIGN-UP STYLES*/
+#signupSec {
+    background-image: none;
+}
+
+.signup-img img {
+    margin-top: 100px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    box-shadow:  5px 5px 11px #96bc7d,
+                -5px -5px 11px #b0dc93;
+}
+
+.signup-title {
+    color: #0b6549;
+    font-weight: 600;
+    letter-spacing: 4px;
+    position: relative;
+    display: flex;
+}
+
+.signup-message, .already {
+    color: #0b6549;
+    font-size: 14px;
+}
+
+.already a {
+    color: #a3cc88;
+}
+
+.already a:hover {
+    text-decoration: underline #a3cc88;
+}
+
+.signup-flex {
+    width: 100%;
+    display: flex;
+}
+
+.signup-form label {
+    position: relative;
+}
+
+.signup-form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #b0dc93;
+    border-radius: 10px;
+}
+
+.signup-form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #0b6549;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.signup-form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.signup-form label .input:focus + span,.signup-form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.signup-form label .input:valid + span {
+    color: green;
+}
+
+.signup-submit {
+    border: none;
+    outline: none;
+    background-color: #0b6549;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.signup-submit:hover {
+    background-color: #a3cc88;
+    color: #1a7d5d;
+}
+
+/*JOBSEEKER DASHBOARD STYLES*/
+.collapse .navbar-nav i {
+    color: #0b6549;
+}
+
+.sidebar {
+    margin-top: 100px;
+    height: 100vh;
+    text-decoration: none;
+    border-right: 1px solid #a3cc88;
+}
+
+.sidebar .list-group .list-group-item {
+    color: #0b6549;
+    font-size: 15px;
+}
+
+.sidebar .list-group .list-group-item a {
+    text-decoration: none;
+}
+
+.sidebar .list-group .list-group-item i {
+    margin-right: 5px;
+}
+
+.sidebar .list-group .list-group-item a:hover {
+    color: #a3cc88;
+}
+
+.sidebar .list-group .prof,
+.sidebar .list-group .jobb,
+.sidebar .list-group .match,
+.sidebar .list-group .saved {
+    background-color: #b0dc93;
+}
+
+.sidebar .list-group .jobb {
+
+}
+
+.mainbar {
+    margin-top: 100px;
+    max-width: 100vw;
+}
+
+.navbar .user-pic {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+/********SUBMENU***********/
+.submenu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 1;
+}
+
+.submenu-wrap.open-menu {
+    max-height: 400px;
+}
+
+.submenu {
+    background: #d3ddcc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info h5 {
+    font-weight: 500;
+    color: #0b6549;
+}
+
+.user-info img {
+    width: 60px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.submenu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #a3cc88;
+    margin: 15px 0 10px
+}
+
+.submenu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.submenu-link p {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.submenu-link i {
+    width: 40px;
+    border-radius: 100%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.submenu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.submenu-link:hover span {
+    transform: translateX(5px);
+    color: #a3cc88;
+}
+
+.submenu-link:hover p, .submenu-link:hover i {
+    font-weight: 600;
+    color: #a3cc88;
+}
+
+/*search job styles*/
+.mainbar .search-area .search-btn {
+    color: #fff;
+    background-color: #0b6549;
+}
+
+.mainbar .search-area .search-btn:hover {
+    color: #0b6549;
+    background-color: #a3cc88;
+    
+}
+
+.filter .dropdown .btn {
+    color: #0b6549;
+    height: 45px;
+    font-size: 12px;
+    background-color: #a3cc88;
+    
+}
+
+.filter .dropdown .btn:hover {
+    color: #a3cc88;
+    background-color: #0b6549;
+}
+
+.filter .dropdown .dropdown-menu .form-check-label {
+    color: #0b6549;
+    width: 170px;
+    font-size: 13px;
+    padding-left: 0;
+}
+
+.filter .dropdown .dropdown-menu h6,
+.filter .dropdown .dropdown-menu .form-check .form-check-label {
+    color: #0b6549;
+    font-size: 13px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.filter .dropdown .dropdown-menu .clear {
+    width: fit-content;
+    height: fit-content;
+    padding: 2px;
+    margin-top: 5px;
+}
+
+.mainbar .dropdown-menu {
+    overflow-y: scroll;
+    max-height: 350px;
+    max-width: 300px;
+}
+
+.mainbar .dropdown .dropdown-menu .mb-3 {
+    color: #0b6549;
+    font-size: 13px;
+}
+
+.mainbar .dropdown .dropdown-menu .enter-salary {
+    width: 170px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/*offcanvas seekerdash*/
+#seekSec .offcanvas {
+    max-height: 100vh;
+    width: auto;
+}
+
+.offcanvas-body img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.offcanvas-body .offcanvas-icons .d-flex i {
+    margin: auto;
+    text-align: center;
+}
+
+.offcanvas-body .btn {
+    background-color: #a3cc88;
+    color: #0b6549;
+    font-size: 13px;
+}
+
+.offcanvas .list-group a {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.offcanvas-body .filter {
+    color: #0b6549;
+}
+
+.offcanvas-body .filter .col-6 .btn {
+    width: 130px;
+}
+
+.offcanvas-body .list-group .list-group-item a:hover,
+.offcanvas-body .offcanvas-icons .d-flex li a:hover {
+    color: #a3cc88;
+}
+
+
+/*SIGN-IN STYLES*/
+
+.signin {
+    background-image: url('images/signinbg3.jpg');
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.signin .signup-form .or,
+.signin .signup-form .with {
+    color: #0b6549;
+    text-align: center;
+}
+
+.signin .signup-form .d-flex a {
+    text-decoration: none;
+    font-size: small;
+    width: 200px;
+}
+
+.signin .signup-form .d-flex a:hover {
+    color: #a3cc88;
+}
+
+.signin .signup-form .signup-submit a {
+    width: 350px;
+    color: #fff;
+}
+
+.signin .signup-form .forgot {
+    width: 250px;
+    padding: 10px;
+    color: #a3cc88;
+}
+
+.signin .signup-form .signin-option {
+    justify-content: center;
+}
+
+.signin .signup-form .signin-option .g-in,
+.signin .signup-form .signin-option .a-in {
+    border: 1px solid #a3cc88;
+    color: #0b6549;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/********COMPANY SLIDER*********/
+.company {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.company-category {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 50px 30px;
+    text-transform: capitalize;
+    color: #0b6549;
+}
+
+.company-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.company-container::-webkit-scrollbar {
+    display: none;
+}
+
+.company-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.company-image {
+position: relative;
+width: 100%;
+height: 350px;
+overflow: hidden;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.company-thumb {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+.card-btn {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+padding: 10px;
+width: 90%;
+height: auto;
+text-transform: capitalize;
+border: none;
+outline: none;
+background: #0b6549;
+border-radius: 5px;
+transition: 0.5s;
+cursor: pointer;
+opacity: 0;
+color: #a3cc88;
+}
+
+.company-card:hover .card-btn {
+opacity: 2;
+text-align: center;
+}
+
+.card-btn:hover {
+background: #a3cc88;
+color: #0b6549;
+}
+
+.company-info {
+width: 100%;
+height: 100px;
+padding-top: 10px;
+}
+
+.company-brand {
+text-transform: uppercase;
+color: #0b6549;
+font-size: 25px;
+}
+
+.company-short-description {
+width: 100%;
+height: 20px;
+line-height: 20px;
+overflow: hidden;
+opacity: 0.5;
+text-transform: capitalize;
+margin: 5px 0;
+}
+
+.pre-btn,
+.nxt-btn {
+border: none;
+width: 10vw;
+height: 100%;
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+cursor: pointer;
+z-index: 8;
+}
+
+.pre-btn {
+left: 0;
+transform: rotate(180deg);
+}
+
+.nxt-btn {
+right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+opacity: 1;
+}
+
+/************popup style************/
+
+.overlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: transparent;
+transition: opacity 1s;
+visibility: hidden;
+opacity: 0;
+}
+
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+.popup {
+margin: 70px auto;
+padding: 20px;
+background: #d3ddcc;
+border-radius: 5px;
+width: 30%;
+position: absolute;
+transition: all 5s ease-in-out;
+}
+
+.popup p {
+    color: #1a7d5d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.popup h6 {
+margin-top: 0;
+font-size: 17px;
+color: #0b6549;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+}
+
+.popup .close {
+position: absolute;
+top: 5px;
+right: 30px;
+transition: all 200ms;
+font-size: 30px;
+font-weight: bold;
+text-decoration: none;
+color: #0b6549;
+}
+
+.popup .close:hover {
+color: #333;
+}
+
+.popup .content {
+max-height: 30%;
+overflow: auto;
+}
+
+.popup .content .list-group .list-group-item {
+    background-color: transparent;
+    font-size: 13px;
+    padding-bottom: 0;
+}
+
+.popup .content .list-group .list-group-item img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.popup .content .list-group .list-group-item small {
+    margin: 10px;
+}
+
+.popup .content .list-group .list-group-item .notif {
+    color: #333;
+    font-size: 14px;
+    padding: 15px 0 5px 10px;
+}
+
+@media screen and (max-width: 700px){
+.box{
+    width: 70%;
+}
+.popup{
+    width: 70%;
+}
+}
+
+/***************CARD SWIPER***************/
+
+
+/*.card__btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}*/
+
+
+/********************EMPLOYER SIGNUP*********************/
+.emp-signup {
+    margin-top: 130px;
+    margin-bottom: 50px;
+    background-color: #b0dc93;
+    border-radius: 20px;
+    height: auto;
+    width: 70vw;
+}
+
+#emp-signSec {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('images/banner1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.emp-signup .title {
+    color: #171515;
+}
+
+.emp-signup h3 {
+    color: #0b6549;
+}
+
+.emp-signup .basic-info {
+    background-color: #d7f3c4;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin: 30px;
+    width: auto;
+}
+
+.input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #4e4f4f;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 13px;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+    top: -20px;
+    font-size: 10px;
+    color: #333;
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+    transform: scaleX(1);
+}
+
+.basic-info .dropdown .size-dropdown {
+    color: #333;
+    margin: 30px;
+    font-size: 13px;
+    border: #171515 1px solid;
+}
+
+.basic-info p, .basic-info .choices {
+    font-size: 13px;
+}
+
+.col-12 .text-center .employer-submit {
+    color: #fff;
+    background-color: #0b6549;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+}
+
+.col-12 .text-center .employer-submit:hover {
+    background-color: #a3cc88;
+    color: #0b6549;
+}
+
+/*******JOB BOARD******/
+.card-job h5 {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.jobboard {
+    color: #1a7d5d;
+    margin-top: 20px;
+}
+
+.see {
+    text-align: right;
+    color: #1a7d5d;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.see:hover {
+    color: #a3cc88;
+}
+
+.jobdesc {
+    margin-left: 5px;
+    padding-left: 10px;
+}
+
+.jobdesc h6, .jobdesc h5 {
+    color: #1a7d5d;
+}
+
+.jobdesc ul {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.matches h1 {
+    color: #1a7d5d;
+}
+
+/********MATCHES STYLES*******/
+.card__image {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid #0b6549;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card {
+    width: 20em;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2em, 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card__title {
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    top: 3px;
+}
+
+.card__name {
+    color: #0b6549;
+    font-size: 13px;
+}
+
+.card__text {
+    text-align: center;
+    font-size: 13px;
+    margin: 17px 0;
+    text-decoration: none;
+}
+
