@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!--CSS-->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -1256,63 +1258,131 @@
                         </div>
                     </div>
                 </div>
-
-
-                <!--SM Cards start-->
-                <div class="container">
-                    <div class="row">     
-                        <div class="company">
-                            <h1 class="text-center">Find a company to match</h1>
-                            <div class="row d-flex">
-                                <div class="col-12 col-md-6 col-lg-4 justify-content-md-center">
-                                    <div class="card my-5 m-auto">
-                                        <img src="images/flash.png" class="card-img img-fluid">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Junior Accountant</h5>
-                                            <p class="card-text">Flash Express</p>
-                                            <p class="card-subtext">Makati City, PH</p>
-                                            <button class="see-more">see more</button>
-                                            <div class="d-flex main-card-btn">
-                                                <button class="no"><i class="fa-solid fa-heart-crack"></i></button>
-                                                <button class="yes"><i class="fa-solid fa-heart"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
+                <!--SWIPER-->
+                <section class="swiper mySwiper">
+                    <h1>Find a company to match</h1>
+                    <div class="swiper-wrapper">
+                        <div class="cards swiper-slide">
+                            <div class="cards-image">
+                                <img src="images/flash.png" alt="card image">
+                            </div>
+                            <div class="cards-content">
+                                <span class="cards-title">Junior Accountant</span>
+                                <span class="cards-name">Flash Express</span>
+                                <span class="cards-text">Quezon City, PH</span>
+                                <span class="cards-text">Full-time</span>
+                                <p class="cards-text">Job Category:<br>Accounting & Finance</p>
+                                <div class="d-flex cards-button">
+                                    <button class="um me-2 px-2">Unmatch</button>
+                                    <button class="sm mx-1 px-2">See More</button>
+                                    <button class="ma ms-2 px-2">Match</button>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
-                                    <div class="card my-5 m-auto">
-                                        <img src="images/wells.png" class="card-img">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Customer Service Represenative</h5>
-                                            <p class="card-text">Wells Fargo</p>
-                                            <p class="card-subtext">Taguig City, PH</p>
-                                            <button class="see-more">see more</button>
-                                            <div class="d-flex main-card-btn">
-                                                <button class="no"><i class="fa-solid fa-heart-crack"></i></button>
-                                                <button class="yes"><i class="fa-solid fa-heart"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="cards swiper-slide">
+                            <div class="cards-image">
+                                <img src="images/sb.png" alt="card image">
+                            </div>
+                            <div class="cards-content">
+                                <span class="cards-title">Barista</span>
+                                <span class="cards-name">Starbucks Philippines</span>
+                                <span class="cards-text">Makati City, PH</span>
+                                <span class="cards-text">Full-time</span>
+                                <p class="cards-text">Job Category:<br>Food & Beverages</p>
+                                <div class="d-flex cards-button">
+                                    <button class="um me-2 px-2">Unmatch</button>
+                                    <button class="sm mx-1 px-2">See More</button>
+                                    <button class="ma ms-2 px-2">Match</button>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
-                                    <div class="card my-5 m-auto">
-                                        <img src="images/sb.png" class="card-img">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Barista</h5>
-                                            <p class="card-text">Starbucks Philippines</p>
-                                            <p class="card-subtext">Makati City, PH</p>
-                                            <button class="see-more">see more</button>
-                                            <div class="d-flex main-card-btn">
-                                                <button class="no"><i class="fa-solid fa-heart-crack"></i></button>
-                                                <button class="yes"><i class="fa-solid fa-heart"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="cards swiper-slide">
+                            <div class="cards-image">
+                                <img src="images/wells.png" alt="card image">
+                            </div>
+                            <div class="cards-content">
+                                <span class="cards-title">CSR</span>
+                                <span class="cards-name">Wells Fargo Philippines</span>
+                                <span class="cards-text">Taguig City, PH</span>
+                                <span class="cards-text">Full-time</span>
+                                <p class="cards-text">Job Category:<br>Customer Service</p>
+                                <div class="d-flex cards-button">
+                                    <button class="um me-2 px-2">Unmatch</button>
+                                    <button class="sm mx-1 px-2">See More</button>
+                                    <button class="ma ms-2 px-2">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards swiper-slide">
+                            <div class="cards-image">
+                                <img src="images/dunkin.png" alt="card image">
+                            </div>
+                            <div class="cards-content">
+                                <span class="cards-title">Pastry Chef</span>
+                                <span class="cards-name">Dunkin'</span>
+                                <span class="cards-text">Quezon City, PH</span>
+                                <span class="cards-text">Full-time</span>
+                                <p class="cards-text">Job Category:<br>Food & Beverages</p>
+                                <div class="d-flex cards-button">
+                                    <button class="um me-2 px-2">Unmatch</button>
+                                    <button class="sm mx-1 px-2">See More</button>
+                                    <button class="ma ms-2 px-2">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards swiper-slide">
+                            <div class="cards-image">
+                                <img src="images/comp2.png" alt="card image">
+                            </div>
+                            <div class="cards-content">
+                                <span class="cards-title">Sales Associate</span>
+                                <span class="cards-name">The Loop</span>
+                                <span class="cards-text">Manila City, PH</span>
+                                <span class="cards-text">Full-time</span>
+                                <p class="cards-text">Job Category:<br>Sales & Marketing</p>
+                                <div class="d-flex cards-button">
+                                    <button class="um me-2 px-2">Unmatch</button>
+                                    <button class="sm mx-1 px-2">See More</button>
+                                    <button class="ma ms-2 px-2">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards swiper-slide">
+                            <div class="cards-image">
+                                <img src="images/comp6.png" alt="card image">
+                            </div>
+                            <div class="cards-content">
+                                <span class="cards-title">Front-end Developer</span>
+                                <span class="cards-name">Tiktok Philippines</span>
+                                <span class="cards-text">Taguig City, PH</span>
+                                <span class="cards-text">Full-time</span>
+                                <p class="cards-text">Job Category:<br>IT & Software</p>
+                                <div class="d-flex cards-button">
+                                    <button class="um me-2 px-2">Unmatch</button>
+                                    <button class="sm mx-1 px-2">See More</button>
+                                    <button class="ma ms-2 px-2">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards swiper-slide">
+                            <div class="cards-image">
+                                <img src="images/comp5.png" alt="card image">
+                            </div>
+                            <div class="cards-content">
+                                <span class="cards-title">Back-end Developer</span>
+                                <span class="cards-name">Shoppee Philippines</span>
+                                <span class="cards-text">Makati City, PH</span>
+                                <span class="cards-text">Full-time</span>
+                                <p class="cards-text">Job Category:<br>IT & Software</p>
+                                <div class="d-flex cards-button">
+                                    <button class="um me-2 px-2">Unmatch</button>
+                                    <button class="sm mx-1 px-2">See More</button>
+                                    <button class="ma ms-2 px-2">Match</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div> 
     </div>
@@ -1390,6 +1460,25 @@
 </footer>
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows: false,
+        },
+            pagination: {
+            el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 </html>
