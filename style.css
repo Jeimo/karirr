@@ -452,7 +452,7 @@
     -webkit-transform-origin: 0;
     -ms-transform-origin: 0;
     transform-origin: 0;
-    -webkit-box-shadow: 1px 1px 12px #92a387;
+    box-shadow: 1px 1px 12px #92a387;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -623,10 +623,6 @@
 .sidebar .list-group .match,
 .sidebar .list-group .saved {
     background-color: #b0dc93;
-}
-
-.sidebar .list-group .jobb {
-
 }
 
 .mainbar {
