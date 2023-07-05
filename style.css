@@ -634,6 +634,7 @@
     color: #a3cc88;
 }
 
+.sidebar .list-group .dash,
 .sidebar .list-group .prof,
 .sidebar .list-group .jobb,
 .sidebar .list-group .match,
@@ -1541,3 +1542,69 @@ overflow: auto;
     font-size: 13px;
     text-transform: uppercase;
 }
+
+/******PROFILE CREATION******/
+.profile-create h1 {
+    color: #0b6549;
+}
+
+.accordion-body img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.accordion-item .accordion-header .accordion-button,
+.accordion-body .info .basic-info .list-group-item i,
+.accordion-body .side-info .basic-info .list-group-item i {
+    color: #1a7d5d;
+}
+
+.accordion-body .side-info .basic-info .list-group-item button,
+.accordion-body .add button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a3cc88;
+    color: #0b6549;
+    font-size: 14px;
+}
+
+.accordion-body .info {
+    border-right: 1px solid #a3cc88;
+}
+
+.accordion-body .info .basic-info .list-group-item,
+.accordion-body .side-info .basic-info .list-group-item {
+    border: none;
+    font-size: 13px;
+}
+
+.accordion-body .info .basic-info .list-group-item span,
+.accordion-body .side-info .basic-info .list-group-item span {
+    margin-left: 20px;
+}
+
+.must-comp {
+    margin-top: 80px;
+}
+
+.must-comp .list-group-item {
+    color: #1a7d5d;
+    font-size: 13px;
+    height: 60px;
+    padding: 20px;
+}
+
+.must-comp .text-center {
+    font-weight: 700;
+}
+
+.accordion-body .salary p {
+    font-size: 13px;
+    border-right: 1px solid #a3cc88;
+}
+
