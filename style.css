@@ -136,6 +136,17 @@
     position: relative;
 }
 
+.hero .d-flex .magni {
+    border: #d8e6e1 1px solid;
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.hero .d-flex i {
+    color: #1a7d5d;
+}
+
 .d-flex .dropdown .hero-drop,
 .dropdown .dropdown-menu .dropdown-item,
 .d-flex .form-control {
@@ -345,7 +356,11 @@
     font-size: 15px;
 }
 
-.kar-foot .footer-logo i:hover  {
+.kar-foot .footer-logo i {
+    color: #0b6549;
+}
+
+.kar-foot .footer-logo i:hover {
     color: #a3cc88;
 }
 
@@ -936,7 +951,7 @@ transform: translateX(-50%);
 padding: 10px;
 width: 90%;
 height: auto;
-text-transform: capitalize;
+text-transform: uppercase;
 border: none;
 outline: none;
 background: #0b6549;
@@ -955,6 +970,11 @@ text-align: center;
 .card-btn:hover {
 background: #a3cc88;
 color: #0b6549;
+}
+
+.company-card a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .company-info {
@@ -1108,6 +1128,14 @@ overflow: auto;
 }
 
 /********************EMPLOYER SIGNUP*********************/
+@media screen and (max-width: 600px) {
+    .emp-signup {
+    min-width: 100%;
+    padding: 20px;
+    }
+}
+
+
 .emp-signup {
     margin-top: 130px;
     margin-bottom: 50px;
