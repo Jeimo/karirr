@@ -7,6 +7,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
     /*outline: red 1px solid;*/
 }
 
@@ -183,24 +184,18 @@
 
 /*card section*/
 .card {
-    max-width: 100%;
-    width: 380px;
-    height: 430px;
+    max-width: 90%;
+    max-height: 90%;
+    width: 280px;
+    height: 230px;
     border-radius: 15px;
     overflow: hidden;
     border: 5px solid #fff;
-    position: relative;
-    flex: 1;
     object-fit: cover;
     cursor: pointer;
 }
 
 /****media query for jobseeker dash****/
-@media screen and (max-width: 600px) {
-    .card {
-    max-width: 100%;
-    }
-}
 
 .card-img {
     width: 100%;
@@ -292,7 +287,7 @@
     outline: none;
     font-weight: 500;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 /* main banner*/
@@ -637,8 +632,14 @@
 .sidebar .list-group .dash,
 .sidebar .list-group .prof,
 .sidebar .list-group .jobb,
-.sidebar .list-group .match,
-.sidebar .list-group .saved {
+.sidebar .list-group .match {
+    background-color: #b0dc93;
+}
+
+.offcanvas .offcanvas-body .list-group .dash,
+.offcanvas .offcanvas-body .list-group .prof,
+.offcanvas .offcanvas-body .list-group .jobb,
+.offcanvas .offcanvas-body .list-group .match {
     background-color: #b0dc93;
 }
 
@@ -1556,6 +1557,11 @@ overflow: auto;
     margin: auto;
 }
 
+.accordion-item .accordion-header .accordion-button {
+    background-color: #d3ddcc;
+    border: none;
+}
+
 .accordion-item .accordion-header .accordion-button,
 .accordion-body .info .basic-info .list-group-item i,
 .accordion-body .side-info .basic-info .list-group-item i {
@@ -1571,6 +1577,13 @@ overflow: auto;
     background-color: #a3cc88;
     color: #0b6549;
     font-size: 14px;
+}
+
+.accordion-body .side-info .basic-info .list-group-item button:hover,
+.accordion-body .add button:hover {
+    cursor: pointer;
+    background-color: #1a7d5d;
+    color: #a3cc88;
 }
 
 .accordion-body .info {
@@ -1599,8 +1612,12 @@ overflow: auto;
     padding: 20px;
 }
 
-.must-comp .text-center {
+.must-comp .active {
     font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+    background-color: #d3ddcc;
+    border: none;
 }
 
 .accordion-body .salary p {
@@ -1608,3 +1625,8 @@ overflow: auto;
     border-right: 1px solid #a3cc88;
 }
 
+@media screen and (max-width: 600px) {
+    .profile-create {
+    margin-top: 100px;
+    }
+}
