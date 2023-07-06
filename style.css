@@ -21,7 +21,7 @@
 
 #mainSec::before {
     content:'';
-    background-image: url('images/mainbg.jpg');
+    background-image: url('images/bgmain.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: .9;
+    opacity: .6;
 }
 
 .navbar {
@@ -44,7 +44,6 @@
     transform: translateX(-50%);
     display: block;
     z-index: 3;
-
 }
 
 .nav-item .btn, .btn-hire {
@@ -131,10 +130,20 @@
 .hero {
     margin-top: 150px;
     padding-top: 70px;
-    color: #000;
+    color: #0b6549;
     display: flex;
     flex-direction: row;
     position: relative;
+}
+
+@media screen and (max-width: 700px){
+    .hero{
+        margin-top: 110px;
+        font-weight: 900;
+        max-width: auto;
+        text-shadow: #ccc;
+    }
+
 }
 
 .hero .d-flex .magni {
@@ -195,7 +204,22 @@
     cursor: pointer;
 }
 
-/****media query for jobseeker dash****/
+@media screen and (max-width: 600px) {
+    .card {
+    min-width: 100%;
+    }
+
+    .card .card-body .card-title {
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+
+    .card .card-body .card-text,
+    .card .card-body .card-subtext,
+    .card .card-body .see-more {
+        font-size: 10px;
+    }
+}
 
 .card-img {
     width: 100%;
@@ -738,6 +762,11 @@
 }
 
 /*search job styles*/
+
+.mainbar .search-area {
+    padding-top:  20px ;
+}
+
 .mainbar .search-area .search-btn {
     color: #fff;
     background-color: #0b6549;
@@ -1288,6 +1317,13 @@ overflow: auto;
     color: #1a7d5d;
 }
 
+@media screen and (max-width: 700px){
+    .jobdesc {
+        border-right: none;
+    }
+
+}
+
 /********MATCHES STYLES*******/
 .card__image {
     width: 10em;
@@ -1428,12 +1464,22 @@ overflow: auto;
 
 .swiper {
     width: 100%;
+    background-color: #e9f3e2;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .swiper h1 {
     color: #1a7d5d;
     text-align: center;
-    margin-top: 100px;
+    
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .swiper h1{
+        margin-top: 100px;
+    }
 }
 
 .swiper-wrapper {
@@ -1555,6 +1601,12 @@ overflow: auto;
     height: 100px;
     text-align: center;
     margin: auto;
+}
+
+.accordion-body i {
+    color: #0b6549;
+    left: 0;
+    cursor: pointer;
 }
 
 .accordion-item .accordion-header .accordion-button {
