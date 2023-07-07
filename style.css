@@ -1122,6 +1122,10 @@ color: #0b6549;
 color: #333;
 }
 
+.popup .content .list-group .text-center {
+    color: #1a7d5d;
+}
+
 .popup .content {
 max-height: 30%;
 overflow: auto;
@@ -1317,11 +1321,23 @@ overflow: auto;
     color: #1a7d5d;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .jobdesc {
         border-right: none;
     }
+    .unmatch {
+        margin: 20px 0;
+    }
+}
 
+.unmatch .active {
+    background-color: #d3ddcc;
+    color: #1a7d5d;
+}
+
+.unmatch .list-group-item {
+    font-size: 13px;
+    color: #1a7d5d;
 }
 
 /********MATCHES STYLES*******/
@@ -1400,71 +1416,10 @@ overflow: auto;
     border: none;
     color: #1a7d5d;
 }
-
-/*******COMPANY POPUPS**********/
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: transparent;
-    transition: opacity .5s;
-    visibility: hidden;
-    opacity: 0;
-}
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-
-.popup-see {
-    margin: 90px auto;
-    padding: 20px;
-    background: #d7f3c4;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-}
-
-.popup-see h6 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-}
-.popup-see .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-.popup-see .close:hover {
-    color: #06D85F;
-}
-.popup-see .content {
-    max-height: 30%;
-    overflow: auto;
-}
-
-@media screen and (max-width: 700px){
-.box{
-    width: 70%;
-}
-.popup-see{
-    width: 70%;
-}
-}
-
 /*******COMPANY CARD SWIPER************/
 
 .swiper {
     width: 100%;
-    background-color: #e9f3e2;
     margin-bottom: 10px;
     border-radius: 5px;
 }
@@ -1677,8 +1632,13 @@ overflow: auto;
     border-right: 1px solid #a3cc88;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .profile-create {
     margin-top: 100px;
+    }
+    .accordion-body .info,
+    .accordion-body .side-info,
+    .accordion-body .salary p {
+        border: none;
     }
 }
