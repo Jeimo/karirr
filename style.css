@@ -1137,6 +1137,12 @@ overflow: auto;
     padding-bottom: 0;
 }
 
+.popup .content .list-group .list-group-item:hover,
+.popup .content .list-group .list-group-item .d-flex p:hover {
+    color: #0b6549;
+    background-color: #a3cc88;
+}
+
 .popup .content .list-group .list-group-item img {
     border-radius: 100%;
     width: 50px;
